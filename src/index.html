@@ -3,62 +3,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>appaya - LP boilerplate</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Montserrat" rel="stylesheet">
-
+    <title>Raa - LP Boilerplate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
 </head>
 
 <body>
-  <nav class="p-nav">
-    <div class="o-container">
-      <div class="o-grid o-grid--align-end">
-        <div class="o-grid__item sm-4">
-          <div class="c-logo">
-            <img src="./assets/logo.png" alt="Appaya">
-          </div>
+    <nav class="p-nav">
+        <div class="o-container">
+            <div class="o-grid o-grid--align-center">
+                <div class="o-grid__item sm-4">
+                    <p class="c-logo">
+                        <a href="/">
+                            Raa LP Boilerplate
+                        </a>
+                    </p>
+                </div>
+                
+            </div>
         </div>
-        <div class="o-grid__item sm-8">
-          <p class="u-text-align-right">raa LP boilerplate v1.0.4</p>
+    </nav>
+    <header id="header" class="p-header">
+        <div class="o-container">
+            <h1 class="p-header__title">
+                Raa LP Boilerplate
+            </h1>
+            <p class="p-header__text">
+                Welcome to Raa LP Boilerplate. You can find here everything you need to start your landing page project. Including webpack config (typescript, scss and html loaders), es6 polyfills and more. This project also include advanced "SEM&BIO" scss structure, you can
+                read more <a href="https://css-tricks.com/combining-the-powers-of-sem-and-bio-for-improving-css/">here</a> and use <a href="https://github.com/mateuszszmytko/raa-style-base" target="_blank">@raa/style-base</a>.
+            </p>
         </div>
-      </div>
-    </div>
-  </nav>
-
-  <header>
-    <div class="o-container">
-      <div class="u-spacing-huge">
-        <h1 class="u-font-size-heading">appaya LP boilerplate</h1>
-        <p class="u-font-size-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem et voluptatem pariatur, nobis magnam aut accusamus
-          optio impedit assumenda molestiae provident voluptas eligendi a ipsum eos. Illo non minus voluptatem deserunt nisi
-          porro quia? Laboriosam.</p>
-      </div>
-    </div>
-  </header>
-  <section>
-    <div class="o-container">
-      <form appaya-behavior="form-validate;form-ajax" class="c-form" action="https://jsonplaceholder.typicode.com/posts" form-ajax-messagesuccess="Dziękujemy, odezwiemy się w ciągu kilku godzin!"
-        form-ajax-messagefailure="Przepraszamy, wystąpił błąd!" novalidate>
-
-        <div class="c-form__group">
-          <label for="name">Your name</label>
-          <input type="text" name="name" id="name" required>
-        </div>
-        <div class="c-form__group">
-          <label for="name">Your email</label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <input type="submit" class="c-form__submit c-btn" value="Send">
-      </form>
-    </div>
-  </section>
+    </header>
 </body>
-
 </html>
