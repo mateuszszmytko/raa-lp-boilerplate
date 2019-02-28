@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@raa/style-base": "^1.0.1",
     "es6-shim": "^0.35.4",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
-    "awesome-typescript-loader": "^5.2.1",
+    "ts-loader": "^5.3.3",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
