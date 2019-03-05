@@ -1,8 +1,4 @@
 const path = require('path'),
-    MiniCssExtractPlugin = require("mini-css-extract-plugin"),
-    OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"),
-    UglifyJsPlugin = require("uglifyjs-webpack-plugin"),
-    autoprefixer = require('autoprefixer'),
     HtmlWebpackPlugin = require('html-webpack-plugin');;
 
 module.exports = {
@@ -24,7 +20,6 @@ module.exports = {
 
     module: {
         rules: [
-            { test: /\.ts?$/, use: "ts-loader" },
             {
 				test: /\.html$/,
 				loader: 'html-loader?attrs[]=img:src&attrs[]=video:src&attrs[]=source:src'
@@ -37,6 +32,23 @@ module.exports = {
 				test: /\.(webm|mp4)$/,
 				loader: 'file-loader?name=assets/[name].[ext]'
 			},
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            [
+                                "@babel/preset-env",
+                                {
+                                  "useBuiltIns": "usage"
+                                }
+                            ]
+                        ],
+                    }
+                }
+            }
         ]
     },
     plugins: [

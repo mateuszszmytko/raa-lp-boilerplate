@@ -3,8 +3,7 @@ const webpackMerge = require('webpack-merge'),
     MiniCssExtractPlugin = require("mini-css-extract-plugin"),
     OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"),
     UglifyJsPlugin = require("uglifyjs-webpack-plugin"),
-    autoprefixer = require('autoprefixer'),
-    HtmlWebpackPlugin = require('html-webpack-plugin');
+    autoprefixer = require('autoprefixer');
 
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 

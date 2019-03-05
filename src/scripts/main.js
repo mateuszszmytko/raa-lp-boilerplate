@@ -2,16 +2,18 @@ console.log('asd');
 
 const dsa = new Promise((r) => {
 	r('asd');
-}) as Promise<string>;
+});
 
 export class Asd {
-	 public  static async asd(): Promise<string> {
+	static async asd() {
 		const ddd = await dsa;
 
 		console.log(ddd);
 		Array.from([1, 2, 3], (el) => {
 			console.log(el);
-		});
+        });
+        
+        fetch();
 
 		return ddd;
 	}
